@@ -35,7 +35,7 @@ int main() {
 
     sunion.val = 1;
     if (semctl(IPC_PRIVATE, 0, SETVAL, sunion) < 0)
-        fprintf(stderr, "Failed to init sem");
+      fprintf(stderr, "Failed to init sem");
 
     init_datastore();
 

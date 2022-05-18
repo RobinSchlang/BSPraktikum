@@ -28,7 +28,7 @@ void bind_socket(const socket_t *sock) {
 
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons(5678);
+    server.sin_port = htons(56795);
 
     if (bind(*sock, (struct sockaddr *) &server, sizeof(server)) < 0)
         error_exit("Failed to bind socket");
