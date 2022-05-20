@@ -1,5 +1,5 @@
 //
-// Created by Lucas Tiedtke on 26.03.22.
+// Created by Finn Schreil on 26.03.22.
 //
 
 #ifndef PRAKTIKUM_KEYVALUESTORE_H

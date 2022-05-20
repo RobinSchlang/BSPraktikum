@@ -1,5 +1,5 @@
 //
-// Created by Lucas Tiedtke on 27.03.22.
+// Created by Finn Schreil on 27.03.22.
 //
 
 #ifndef PRAKTIKUM_COMMANDPARSER_H

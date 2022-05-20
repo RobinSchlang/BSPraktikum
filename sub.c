@@ -1,5 +1,5 @@
 //
-// Created by Lucas Tiedtke on 26.03.22.
+// Created by Finn Schreil on 26.03.22.
 //
 
 #include <stdio.h>
@@ -56,7 +56,6 @@ void execute(char *buffer, socket_t client, int semid) {
             strcat(buffer, cmd->key);
             strcat(buffer, ":");
             strcat(buffer, cmd->value);
-            strcat(buffer, cmd_buffer);
             strcat(buffer, "\n");
             send_socket(&client, buffer, strlen(buffer));
             break;
@@ -66,7 +65,7 @@ void execute(char *buffer, socket_t client, int semid) {
             else
                 strcpy(cmd_buffer, "key_deleted");
 
-            strcpy(buffer, "GET");
+            strcpy(buffer, "DEL");
             strcat(buffer, ":");
             strcat(buffer, cmd->key);
             strcat(buffer, ":");
